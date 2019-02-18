@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      #show {
+        border-radius: 50%;
+        border: none;
+      }
+      #form {
+        border-top: 1px solid black;
+        padding-top: 20px;
+      }
+      #card a,
+      #card em,
+      #card h3 {
+        display: block;
+        margin: 5px;
+      }
+    </style>
+    <title>Carnet d'adresses</title>
+  </head>
+  <body>
+    <h1>Carnet d'adresses</h1>
+    <button id="show"><i class="fas fa-plus"></i></button>
+    <button id="del"><i class="fas fa-trash"></i></button>
+    <section>
+      <ul id="list"></ul>
+      <article id="card">
+        <h3>MR PLACEHOLDER</h3>
+        <em>00 00 00 00 00</em>
+        <a href="#">Editer ce contact</a>
+      </article>
+    </section>
+    <form id="form">
+      <label for="civility">Civilité :</label>
+      <select name="civility" id="civility">
+        <option value="M.">Monsieur</option>
+        <option value="Mme">Madame</option>
+        <option value="Mlle">Mademoiselle</option>
+      </select>
+      <label for="lastName">Nom :</label>
+      <input type="text" name="lastName" id="lastName" />
+      <label for="firstName">Prénom :</label>
+      <input type="text" name="firstName" id="firstName" />
+      <label for="phone">Téléphone :</label>
+      <input type="tel" name="phone" id="phone" />
+      <button id="add">Ajouter</button>
+    </form>
+    <script src="carnet.js"></script>
+  </body>
+</html>
